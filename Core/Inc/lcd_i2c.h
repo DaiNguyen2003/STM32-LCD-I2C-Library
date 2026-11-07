@@ -11,7 +11,9 @@
 #include "stm32f1xx_hal.h"
 
 /* LCD I2C Address - Change this if your module has different address */
-#define LCD_I2C_ADDR    (0x27 << 1)  // Shifted for HAL I2C
+#ifndef LCD_I2C_ADDR
+#define LCD_I2C_ADDR    (0x27U << 1)  // Shifted for HAL I2C
+#endif
 
 /* LCD Commands */
 #define LCD_CMD_CLEAR           0x01

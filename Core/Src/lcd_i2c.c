@@ -24,7 +24,7 @@ static void LCD_I2C_Write(uint8_t data);
  */
 static void LCD_I2C_Write(uint8_t data)
 {
-    HAL_I2C_Master_Transmit(lcd_i2c, LCD_I2C_ADDR, &data, 1, HAL_MAX_DELAY);
+    HAL_I2C_Master_Transmit(lcd_i2c, LCD_I2C_ADDR, &data, 1, 25U);
 }
 
 /**

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="479" viewBox="0 0 1080 479" role="img" aria-labelledby="title desc">
+  <title id="title">Đấu nối LCD1602 qua I²C</title>
+  <desc id="desc">PB6 / I2C1_SCL – SCL: Qua dịch mức khi cần; PB7 / I2C1_SDA – SDA: Qua dịch mức khi cần; GND – GND: Mass chung; Nguồn theo module – VCC: Kiểm tra nguồn và pull-up</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#52657f"/>
+    </marker>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #182c47; }
+      .title { font-size: 36px; font-weight: 700; }
+      .heading { font-size: 22px; font-weight: 700; }
+      .label { font-size: 18px; font-weight: 700; }
+      .note { font-size: 16px; fill: #435a73; }
+      .edge { fill: none; stroke: #52657f; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1080" height="479" rx="24" fill="#f7f9fc"/>
+  <rect x="40" y="34" width="5" height="57" rx="2.5" fill="#245cae"/>
+  <text class="title" x="62" y="58">Đấu nối LCD1602 qua I²C</text>
+  <text class="note" x="63" y="87">Blue Pill · I2C1 · Backpack PCF8574</text>
+  <rect x="40" y="112" width="320" height="284" rx="14" fill="#eaf2ff" stroke="#bccbdd"/>
+  <rect x="720" y="112" width="320" height="284" rx="14" fill="#f0ecfb" stroke="#bccbdd"/>
+  <text class="heading" x="62" y="148" text-anchor="start">STM32F103C8T6</text>
+  <text class="heading" x="742" y="148" text-anchor="start">LCD1602 + PCF8574</text>
+  <path d="M40 164H360M720 164H1040" stroke="#bccbdd"/>
+  <path class="edge" d="M360 193H720"/>
+  <text class="note" x="540" y="183" text-anchor="middle">Qua dịch mức khi cần</text>
+  <text class="label" x="340" y="199" text-anchor="end">PB6 / I2C1_SCL</text>
+  <text class="label" x="740" y="199" text-anchor="start">SCL</text>
+  <path class="edge" d="M360 245H720"/>
+  <text class="note" x="540" y="235" text-anchor="middle">Qua dịch mức khi cần</text>
+  <text class="label" x="340" y="251" text-anchor="end">PB7 / I2C1_SDA</text>
+  <text class="label" x="740" y="251" text-anchor="start">SDA</text>
+  <path class="edge" d="M360 297H720"/>
+  <text class="note" x="540" y="287" text-anchor="middle">Mass chung</text>
+  <text class="label" x="340" y="303" text-anchor="end">GND</text>
+  <text class="label" x="740" y="303" text-anchor="start">GND</text>
+  <path class="edge" d="M360 349H720" marker-end="url(#arrow)"/>
+  <text class="note" x="540" y="339" text-anchor="middle">Kiểm tra nguồn và pull-up</text>
+  <text class="label" x="340" y="355" text-anchor="end">Nguồn theo module</text>
+  <text class="label" x="740" y="355" text-anchor="start">VCC</text>
+  <rect x="40" y="413" width="1000" height="42" rx="14" fill="#eaf6f2" stroke="#bccbdd"/>
+  <text class="note" x="58" y="440" text-anchor="start">Module 5 V: dùng bộ dịch mức I²C hai chiều, với pull-up phù hợp ở cả hai phía.</text>
+
+</svg>

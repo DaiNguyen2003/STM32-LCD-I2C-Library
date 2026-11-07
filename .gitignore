@@ -36,3 +36,6 @@ Core/Startup/
 # - Core/Src/lcd_i2c.c
 # - Core/Src/main.c
 # - README.md
+
+/build/
+__pycache__/

@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include \"lcd_i2c.h\"
+#include "lcd_i2c.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 
@@ -110,7 +110,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     // Convert number to string and display
-    sprintf(buffer, "%lu    ", counter);  // Spaces to clear old digits
+    snprintf(buffer, sizeof(buffer), "%lu    ", (unsigned long)counter);  // Spaces to clear old digits
     LCD_SetCursor(1, 0);
     LCD_SendString(buffer);
 
