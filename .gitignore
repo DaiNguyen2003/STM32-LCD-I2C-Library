@@ -1,41 +1,37 @@
-# STM32CubeIDE project files
+# Build and Python output
+/build/
+/Debug/
+/Release/
+__pycache__/
+*.py[cod]
+
+# STM32CubeIDE workspace files
 .cproject
 .mxproject
 .project
+.settings/
 *.launch
 
-# IOC file (CubeMX configuration)
-*.ioc
+# Generated CubeMX files; source configuration lives in config/
+/*.ioc
+/*.ld
+/Drivers/
+/Core/Startup/
+/Core/Inc/stm32f1xx_hal_conf.h
+/Core/Inc/stm32f1xx_it.h
+/Core/Src/stm32f1xx_hal_msp.c
+/Core/Src/stm32f1xx_it.c
+/Core/Src/syscalls.c
+/Core/Src/sysmem.c
+/Core/Src/system_stm32f1xx.c
 
-# Linker script
-*.ld
-
-# Settings folder
-.settings/
-
-# Build output
-Debug/
-Release/
-
-# HAL Drivers (too large, can be regenerated)
-Drivers/
-
-# System files
-Core/Src/stm32f1xx_hal_msp.c
-Core/Src/stm32f1xx_it.c
-Core/Src/syscalls.c
-Core/Src/sysmem.c
-Core/Src/system_stm32f1xx.c
-Core/Inc/main.h
-Core/Inc/stm32f1xx_hal_conf.h
-Core/Inc/stm32f1xx_it.h
-Core/Startup/
-
-# Keep only library files
-# - Core/Inc/lcd_i2c.h
-# - Core/Src/lcd_i2c.c
-# - Core/Src/main.c
-# - README.md
-
-/build/
-__pycache__/
+# Local editor backups and compiled firmware
+*~
+*.bak
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.list
